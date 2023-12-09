@@ -33,15 +33,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
+            $mail->Host = 'christianzabo225@gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'votre_adresse@gmail.com';
-            $mail->Password = 'votre_mot_de_passe_gmail';
+            $mail->Username = 'christianzabo225@gmail.com';
+            $mail->Password = 'theBIGBOSS17';
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
-            $mail->setFrom('votre_adresse@gmail.com', 'Votre Nom');
-            $mail->addAddress('czabo.fr'); // Adresse à laquelle vous souhaitez envoyer l'e-mail
+            $mail->setFrom('christianzabo225@gmail.com', 'Votre Nom');
+            $mail->addAddress('czabo@outlook.fr'); // Adresse à laquelle vous souhaitez envoyer l'e-mail
             $mail->Subject = 'Nouvelle inscription';
             $mail->Body = "Nom: $nom\nEmail: $email\nMot de passe: *** (haché pour des raisons de sécurité)";
 
