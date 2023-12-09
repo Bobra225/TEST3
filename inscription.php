@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             $mail->isSMTP();
-            $mail->Host = 'christianzabo225@gmail.com';
+            $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'christianzabo225@gmail.com';
             $mail->Password = 'theBIGBOSS17';
